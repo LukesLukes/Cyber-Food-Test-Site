@@ -1,0 +1,79 @@
+/* src\components\Header\styles.css */
+
+.header-principal {
+  width: 97%;
+  padding: 0 32px;
+  height: 90px;
+  background: rgba(108, 46, 182, 0.85);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 16px rgba(56, 229, 77, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-menu a {
+  color: #38E54D;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #fff;
+  border-bottom: 2px solid #38E54D;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header-principal {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
+  .nav-menu {
+    gap: 16px;
+    margin-top: 8px;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+    .logo-text {
+        font-size: 1rem;
+    }
+    .nav-menu a {
+        font-size: 0.9rem;
+    }
+}
+
+

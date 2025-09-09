@@ -1,0 +1,73 @@
+.contatos-section {
+  width: 100vw;
+  margin: 0;
+  padding: 32px 0;
+  background: linear-gradient(90deg,  #1b052e 0%, #000000 100%);
+  border-radius: 0;
+  box-shadow: 0 -4px 24px rgba(108, 46, 182, 0.10), 0 -4px 24px rgba(56, 229, 77, 0.10);
+  text-align: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.contatos-section h2 {
+  color: #6C2EB6;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.contatos-section p {
+  color: #15d325;
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
+.contatos-list {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contato-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #38E54D;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-decoration: none;
+  background: #111113;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(108, 46, 182, 0.07);
+}
+
+.contato-item:hover {
+  background: #e9e6f7;
+  color: #9241f7;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .contatos-section {
+    padding: 18px 0;
+  }
+  .contatos-section h2 {
+    font-size: 1.3rem;
+  }
+  .contato-item {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+  .contatos-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
