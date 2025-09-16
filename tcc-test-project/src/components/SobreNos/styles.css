@@ -1,0 +1,26 @@
+/* src/components/Sobre/styles.css */
+
+.sobre-section {
+  background-color: #f7f7f7; /* Um cinza claro para o fundo */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.sobre-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sobre-title {
+  font-size: 2.5rem;
+  color: #5B21B6; /* A cor roxa do seu cabeçalho */
+  margin-bottom: 20px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.sobre-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333; /* Cor de texto escura para melhor leitura */
+  margin-bottom: 15px;
+}

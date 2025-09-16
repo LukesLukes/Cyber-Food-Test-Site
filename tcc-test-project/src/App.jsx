@@ -1,20 +1,21 @@
 import './App.css'
-import BackgroundPrincipal from './components/BackgroundPrincipal'
 import Header from './components/Header'
 import Contatos from './components/Contatos'
 import OpcoesFoodTrucks from './components/OpcoesFoodTrucks'
+import Inicio from './components/Inicio'
+import Sobre from './components/SobreNos'
 
 
 function App() {
   return (
     <>
       <Header />
-      <BackgroundPrincipal>
         <main style={{ marginTop: '70px', width: '100%' }}>
+          <Inicio />
           <OpcoesFoodTrucks />
+          <Sobre />
         </main>
-        <Contatos />
-      </BackgroundPrincipal>
+      <Contatos />
 
     </>
   )

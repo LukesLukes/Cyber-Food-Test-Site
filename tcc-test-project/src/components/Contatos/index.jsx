@@ -1,5 +1,12 @@
-import React from "react";
+// src/components/Contatos/index.jsx
+
+import React from 'react';
 import "./styles.css";
+
+// Importe as imagens com os caminhos corretos
+import emailIcon from '../../assets/images/email-icon.png';
+import whatsappIcon from '../../assets/images/wp.png';
+import instagramIcon from '../../assets/images/instagram-icon.png';
 
 const Contatos = () => {
   return (
@@ -8,16 +15,18 @@ const Contatos = () => {
       <p><strong>Entre em contato para dúvidas, sugestões ou parcerias!</strong></p>
       <div className="contatos-list">
         <a href="mailto:cyberfood@exemplo.com" className="contato-item">
-          <span role="img" aria-label="email">📧</span>
-          cyberfood@exemplo.com
+          <img src={emailIcon} alt="Ícone de E-mail" />
+          <span>cyberfood@exemplo.com</span>
         </a>
+
         <a href="https://wa.me/5599999999999" target="_blank" rel="noopener noreferrer" className="contato-item">
-          <span role="img" aria-label="whatsapp">💬</span>
-          WhatsApp
+          <img src={whatsappIcon} alt="Ícone do WhatsApp" />
+          <span>WhatsApp</span>
         </a>
+
         <a href="https://instagram.com/cyberfoodtrucks" target="_blank" rel="noopener noreferrer" className="contato-item">
-          <span role="img" aria-label="instagram">📸</span>
-          @cyberfoodtrucks
+          <img src={instagramIcon} alt="Ícone do Instagram" />
+          <span>@cyberfoodtrucks</span>
         </a>
       </div>
     </section>

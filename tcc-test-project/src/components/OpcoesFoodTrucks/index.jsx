@@ -1,6 +1,5 @@
-// src\components\OpcoesFoodTrucks\index.jsx
-
 // src/components/OpcoesFoodTrucks/index.jsx
+
 import React from 'react';
 import './styles.css';
 
@@ -29,7 +28,7 @@ const foodTrucks = [
 
 export default function OpcoesFoodTrucks() {
   return (
-    <section className="food-truck-container">
+    <section className="food-truck-container" id="trucks">
       <h2 className="titulo">Opções de Food Trucks</h2>
       <div className="lista-food-trucks">
         {foodTrucks.map((truck, index) => (

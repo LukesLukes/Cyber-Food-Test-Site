@@ -1,3 +1,5 @@
+/* src\components\Contatos\styles.css */
+
 .contatos-section {
   width: 100vw;
   margin: 0;
@@ -25,35 +27,6 @@
   margin-bottom: 24px;
 }
 
-.contatos-list {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.contato-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #38E54D;
-  font-size: 1.1rem;
-  font-family: 'Montserrat', Arial, sans-serif;
-  text-decoration: none;
-  background: #111113;
-  padding: 10px 18px;
-  border-radius: 8px;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(108, 46, 182, 0.07);
-}
-
-.contato-item:hover {
-  background: #e9e6f7;
-  color: #9241f7;
-}
-
 /* Responsivo */
 @media (max-width: 600px) {
   .contatos-section {
@@ -68,6 +41,60 @@
   }
   .contatos-list {
     flex-direction: column;
+    gap: 12px;
+  }
+}
+
+/* Estilos para a lista de contatos */
+.contatos-list {
+  display: flex;
+  flex-direction: row; /* Alinha os itens lado a lado */
+  justify-content: center; /* Centraliza os links horizontalmente */
+  align-items: center; /* Alinha os links verticalmente */
+  gap: 32px; /* Espaço entre cada link */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+}
+
+/* Estilos para cada link de contato */
+.contato-item {
+  display: flex; /* Transforma o link em um container flexbox */
+  align-items: center; /* Alinha o ícone e o texto verticalmente */
+  gap: 12px; /* Espaço entre o ícone e o texto */
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  color: #38E54D; /* Cor do texto, pode ser ajustado para um roxo #5B21B6 */
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600; /* Deixa a fonte mais forte */
+  padding: 10px 18px;
+  background-color: #111111; /* Fundo escuro para contraste */
+  border-radius: 8px; /* Cantos arredondados */
+  transition: background 0.3s, color 0.3s, transform 0.3s; /* Transições suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o hover (passar o mouse por cima) */
+.contato-item:hover {
+  background-color: #5B21B6; /* A cor roxa do seu cabeçalho */
+  color: #FFFFFF; /* Texto branco no hover */
+  transform: translateY(-2px); /* Efeito sutil de elevação */
+}
+
+/* Estilos para as imagens de ícones */
+.contato-item img {
+  width: 24px; /* Tamanho do ícone */
+  height: 24px;
+  filter: brightness(0) invert(1); /* Deixa a cor do ícone branca */
+}
+
+/* Estilos para o texto do link */
+.contato-item span {
+  white-space: nowrap; /* Evita que o texto quebre a linha */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 600px) {
+  .contatos-list {
+    flex-direction: column; /* Alinha os itens em coluna */
     gap: 12px;
   }
 }

@@ -11,7 +11,7 @@ const Header = () => {
         <span className="logo-text">Cyber Food</span>
       </div>
       <nav className="nav-menu">
-        <a href="#home">Início</a>
+        <a href="#home">Introdução</a>
         <a href="#trucks">Food Trucks</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>

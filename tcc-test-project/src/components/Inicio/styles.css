@@ -1,0 +1,104 @@
+/* src\components\Inicio\styles.css */
+
+.inicio-section {
+  background-image: url('../../assets/images/inicio-background.png'); /* Substitua pelo caminho da sua imagem */
+  height: 35vh; /* Ocupa a altura total da viewport */
+  background-size: cover; /* Garante que a imagem cubra toda a seção */
+  background-position: center; /* Centraliza a imagem */
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.inicio-section::before {
+  content: ''; /* Conteúdo vazio para o pseudo-elemento */
+  position: absolute; /* Posição absoluta em relação à seção */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 9, 19, 0.582); /* Fundo preto com 40% de opacidade */
+  z-index: 1; /* Coloca o overlay acima da imagem, mas abaixo do conteúdo */
+}
+
+.inicio-content {
+  position: relative; /* Eleva o conteúdo acima do overlay */
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff; /* Altera a cor do texto para branco para melhor contraste */
+}
+
+.inicio-content h1 {
+  font-size: 3.5rem;
+  color: #fff; /* Altera a cor do título para branco */
+  margin-bottom: 20px;
+}
+
+.inicio-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Container para os botões */
+.inicio-buttons {
+  margin-top: 40px; /* Espaço acima dos botões */
+  display: flex;
+  justify-content: center; /* Centraliza os botões */
+  gap: 20px; /* Espaço entre os botões */
+  flex-wrap: wrap; /* Permite que os botões quebrem a linha em telas menores */
+}
+
+/* Estilo base para todos os botões */
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 50px; /* Botões arredondados */
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
+  cursor: pointer;
+  border: 2px solid transparent; /* Borda transparente para ser preenchida no hover */
+}
+
+/* Estilo para o botão primário (Login) */
+.primary-btn {
+  background-color: #5B21B6; /* Cor roxa principal do seu site */
+  color: #FFFFFF;
+}
+
+/* Efeito de hover para o botão primário */
+.primary-btn:hover {
+  background-color: #f6f0ff; /* Um roxo um pouco mais claro */
+  transform: translateY(-3px); /* Animação: levanta o botão um pouco */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Estilo para o botão secundário (Cadastre-se) */
+.secondary-btn {
+  background-color: transparent; /* Fundo transparente */
+  color: #FFFFFF;
+  border-color: #FFFFFF; /* Borda branca */
+}
+
+/* Efeito de hover para o botão secundário */
+.secondary-btn:hover {
+  background-color: #FFFFFF; /* Fundo branco no hover */
+  color: #5B21B6; /* Texto roxo no hover */
+  transform: translateY(-3px); /* Animação: levanta o botão um pouco */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+/* Responsividade básica para os botões em telas menores */
+@media (max-width: 480px) {
+  .inicio-buttons {
+    flex-direction: column; /* Botões em coluna */
+    gap: 15px;
+  }
+  .btn {
+    width: 80%; /* Ocupa mais largura em telas pequenas */
+    margin: 0 auto; /* Centraliza */
+  }
+}
