@@ -1,0 +1,104 @@
+/* Container que preenche a tela e tem o background */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../assets/images/background-login-form.png'); /* Sua imagem de fundo para Login */
+  background-size: cover;
+  background-position: center;
+  /* Adicione a propriedade 'position: relative;' para garantir que o contêiner de formulário seja posicionado corretamente */
+  position: relative; 
+}
+
+/* O contêiner do formulário com o efeito de vidro desfocado */
+.login-form-container {
+  position: relative;
+  /* Fundo semi-transparente para o efeito de blur */
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  /* Efeito de desfoque, o ponto-chave do problema */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Para compatibilidade com navegadores WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-form-container h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group input::-webkit-input-placeholder,
+.form-group input::-moz-placeholder,
+.form-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+.form-options a {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #5B21B6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #6d28d9;
+}
+
+.terms-text {
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-top: 30px;
+}
+
+.terms-text a {
+  color: #38E54D;
+  text-decoration: none;
+}

@@ -4,13 +4,13 @@
   width: 97%;
   padding: 0 32px;
   height: 90px;
-  background: rgba(107, 46, 182, 0.966);
+  background: linear-gradient(90deg,  #1b052e 0%, #000000 100%);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 2px 16px rgba(56, 229, 77, 0.15);
+  box-shadow: 0 2px 16px rgba(7, 250, 35, 0.096);
   position: fixed;
   top: 0;
   left: 0;
@@ -52,6 +52,7 @@
 .nav-menu a:hover {
   color: #fff;
   border-bottom: 2px solid #38E54D;
+  text-shadow: 0 2px 5px #09e24a60;
 }
 
 /* Responsivo */
@@ -76,4 +77,21 @@
     }
 }
 
+/* src/components/Header/styles.css ou src/App.css */
 
+/* Estilos para o cabeçalho no tema escuro */
+body.dark .header {
+  background-color: #0d0d0d; /* Um preto muito escuro para o cabeçalho */
+  transition: background-color 0.5s;
+}
+
+body.dark .header-logo,
+body.dark .header-nav a {
+  color: #e0e0e0; /* Um cinza claro para o texto */
+  transition: color 0.5s;
+}
+
+/* Efeito de hover para os links no tema escuro */
+body.dark .header-nav a:hover {
+  color: var(--secondary-green); /* Usa a cor verde de destaque no hover */
+}

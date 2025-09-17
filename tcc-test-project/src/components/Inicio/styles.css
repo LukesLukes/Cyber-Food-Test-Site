@@ -17,7 +17,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(18, 9, 19, 0.582); /* Fundo preto com 40% de opacidade */
+  background-color: rgba(18, 9, 19, 0.801); /* Fundo preto com 40% de opacidade */
   z-index: 1; /* Coloca o overlay acima da imagem, mas abaixo do conteúdo */
 }
 
@@ -31,7 +31,7 @@
 
 .inicio-content h1 {
   font-size: 3.5rem;
-  color: #fff; /* Altera a cor do título para branco */
+  color: #ffffff; /* Altera a cor do título para branco */
   margin-bottom: 20px;
 }
 
@@ -72,8 +72,9 @@
 /* Efeito de hover para o botão primário */
 .primary-btn:hover {
   background-color: #f6f0ff; /* Um roxo um pouco mais claro */
+  color: #5e1ed6;
   transform: translateY(-3px); /* Animação: levanta o botão um pouco */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  box-shadow: 0 8px 15px rgba(66, 7, 143, 0.582); /* Sombra mais pronunciada */
 }
 
 /* Estilo para o botão secundário (Cadastre-se) */
@@ -86,9 +87,9 @@
 /* Efeito de hover para o botão secundário */
 .secondary-btn:hover {
   background-color: #FFFFFF; /* Fundo branco no hover */
-  color: #5B21B6; /* Texto roxo no hover */
+  color: #10df10; /* Texto roxo no hover */
   transform: translateY(-3px); /* Animação: levanta o botão um pouco */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+  box-shadow: 0 8px 15px #5bad4b63; /* Sombra mais pronunciada */
 }
 
 /* Responsividade básica para os botões em telas menores */

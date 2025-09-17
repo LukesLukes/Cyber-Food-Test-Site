@@ -18,7 +18,7 @@ const Inicio = () => {
         {/* Novos botões adicionados aqui */}
         <div className="inicio-buttons">
           <a href="/login" className="btn primary-btn">Login</a>
-          <a href="/cadastro" className="btn secondary-btn">Cadastre-se</a>
+          <a href="/cadastro" className="btn secondary-btn">Cadastre-se gratuitamente</a>
         </div>
       </div>
     </section>
