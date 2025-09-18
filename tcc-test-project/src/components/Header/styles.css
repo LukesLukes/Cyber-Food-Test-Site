@@ -95,3 +95,10 @@ body.dark .header-nav a {
 body.dark .header-nav a:hover {
   color: var(--secondary-green); /* Usa a cor verde de destaque no hover */
 }
+
+/* Adicione este código ao final do seu arquivo de estilos do Header */
+
+.nav-menu a.active {
+  color: #38E54D; /* Cor de destaque quando o link está ativo */
+  border-bottom: 2px solid #38E54D; /* Adiciona um sublinhado para reforçar */
+}

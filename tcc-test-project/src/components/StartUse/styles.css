@@ -1,0 +1,78 @@
+/* src/components/StartUse/styles.css */
+
+.startuse-section {
+    padding: 80px 20px;
+    background: #0c0a09; /* Um fundo escuro para destacar o botão */
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid #5b21b6; /* Linha roxa para separar a seção */
+}
+
+.startuse-content h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.startuse-content p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.menu-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #5b21b6; /* Roxo do tema */
+    border: 2px solid #8b5cf6;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    
+    /* Aplica a animação de LED */
+    animation: led-glow 2s infinite alternate;
+}
+
+/* Animação de LED pulsante */
+@keyframes led-glow {
+    0% {
+        box-shadow: 0 0 5px #8b5cf6, 0 0 10px #8b5cf6, 0 0 15px #8b5cf6;
+    }
+    100% {
+        box-shadow: 0 0 20px #c4b5fd, 0 0 30px #c4b5fd, 0 0 40px #c4b5fd;
+    }
+}
+
+/* Efeito ao passar o mouse */
+.menu-button:hover {
+    transform: scale(1.05);
+    background-color: #6d28d9;
+}
+
+/* Animação que acontece ao clicar */
+.menu-button.clicked {
+    animation: click-effect 0.8s forwards;
+    color: #0c0a09;
+}
+
+@keyframes click-effect {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 20px #c4b5fd, 0 0 30px #c4b5fd;
+    }
+    50% {
+        transform: scale(0.9);
+        background-color: #38E54D; /* Verde do tema */
+        box-shadow: 0 0 50px #38E54D, 0 0 80px #38E54D;
+    }
+    100% {
+        transform: scale(1.5);
+        background-color: #38E54D;
+        box-shadow: 0 0 80px #38E54D, 0 0 120px #fff;
+        opacity: 0;
+    }
+}

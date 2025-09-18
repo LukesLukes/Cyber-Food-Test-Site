@@ -29,7 +29,7 @@ const foodTrucks = [
 export default function OpcoesFoodTrucks() {
   return (
     <section className="food-truck-container" id="trucks">
-      <h2 className="titulo">Opções de Food Trucks</h2>
+      <h2 className="titulo">Exemplos de Opções de Food Trucks</h2>
       <div className="lista-food-trucks">
         {foodTrucks.map((truck, index) => (
           <div className="card-food-truck" key={index}>
